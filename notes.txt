@@ -1,0 +1,5 @@
+Important information:
+    links (twitter, blog, gh, linkedin, email)
+    pages:
+        projects (gh page collection?)
+        

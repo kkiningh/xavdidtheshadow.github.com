@@ -58,6 +58,7 @@ textarea {
 
 /* ===== Initializr Styles ==================================================
    Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   Edited: David Brownman - this is my site
    ========================================================================== */
 
 body {
@@ -70,26 +71,31 @@ body {
 }
 
 /* ===================
-    ALL: Orange Theme
+    ALL: Blue Theme
    =================== */
 
 .header-container {
-    border-bottom: 20px solid #ffee00;
+    border-bottom: 20px solid #FFBF00;
 }
 
 .footer-container,
 .main aside {
-    border-top: 20px solid #ffee00;
+    border-top: 20px solid #FFBF00;
 }
 
 .header-container,
 .footer-container,
 .main aside {
-    background: #1919E3;
+    background: #1B1BB3;
 }
 
 .title {
-    color: yellow;
+    color: #fff;
+}
+
+.title a {
+    text-decoration: none;
+    color: #fff;
 }
 
 /* ==============
@@ -110,12 +116,11 @@ nav a {
     text-decoration: none;
     font-weight: bold;
 
-    color: blue;
-    background: #ffee00;
+    color: #1B1BB3;
+    background: #FFBF00;
 }
 
-nav a:hover,
-nav a:visited {
+nav a:hover {
     color: white;
 }
 
@@ -258,7 +263,7 @@ nav a:hover {
    =============== */
 
     .wrapper {
-        width: 1026px; /* 1140px - 10% for margins */
+        /*width: 1026px;  1140px - 10% for margins */
         margin: 0 auto;
     }
 }
@@ -271,7 +276,7 @@ nav a:hover {
     background-color: transparent;
     border: 0;
     overflow: hidden;
-    *text-indent: -9999px;
+    text-indent: -9999px;
 }
 
 .ir:before {
@@ -322,7 +327,7 @@ nav a:hover {
 }
 
 .clearfix {
-    *zoom: 1;
+    zoom: 1;
 }
 
 /* ==========================================================================
