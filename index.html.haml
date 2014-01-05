@@ -1,0 +1,101 @@
+!!!
+/[if lt IE 7]
+  <html class="no-js lt-ie9 lt-ie8 lt-ie7">
+/[if IE 7]
+  <html class="no-js lt-ie9 lt-ie8">
+/[if IE 8]
+  <html class="no-js lt-ie9 lt-ie8">
+/[if gt IE 8]
+  <!--> <html class="no-js"> <!--
+%head
+  %meta{charset: "utf-8"}
+  /hyphens are dumb
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  %title
+    David Brownman dot com
+  %meta{name: "description", content: "Personal site for David Brownman"}
+  %meta{name: "viewport", content: "width=device-width"}
+
+  %link{rel: "stylesheet", href: "css/normalize.min.css"}
+  %link{rel: "stylesheet", href: "css/the.css"}
+  %link{rel: "stylesheet", href: "http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"}
+
+  %script{src: "js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"}
+
+
+%body
+  /[if lt IE 7]
+    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+  .header-container
+    .wrapper.clearfix
+      %h1.title
+        %a{href: "./index.html"}
+          David Brownman
+        %i.fa.fa-bolt
+      %nav
+        %ul
+          %li
+            %a{href: "./blog.html"}
+              Blog
+          %li
+            %a{href: "./blog.html"}
+              Blog
+          %li
+            %a{href: "./blog.html"}
+              Blog
+  .main-container
+    .main.wrapper.clearfix
+      %article
+        %header
+          %h1
+            header h1
+          %p
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec.
+        %section
+          %h2
+            section h2
+          %p
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.
+        %section
+          %h2
+            section h2
+          %p
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.
+        %footer
+          %h3
+            footer h3
+          %p
+            Aquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor.
+
+      %aside
+        %h3
+          aside
+        %p
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.
+  .footer-container
+    %footer.wrapper
+      %h3
+        footer!
+
+  %script{src: "http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"}
+  :javascript
+    window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')
+  %script{src: "js/main.js"}
+  :javascript
+    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src='http://www.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+
+
+
+
+
+
+
+
+
+
+
+
+

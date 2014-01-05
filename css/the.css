@@ -17,12 +17,12 @@ body {
 
 ::-moz-selection {
     background: #b3d4fc;
-    text-shadow: none;
+    /*text-shadow: none;*/
 }
 
 ::selection {
     background: #b3d4fc;
-    text-shadow: none;
+    /*text-shadow: none;*/
 }
 
 hr {
@@ -63,6 +63,7 @@ textarea {
 
 body {
     font: 16px/26px Helvetica, Helvetica Neue, Arial;
+    border-left: 10px solid #1b1bbe;
 }
 
 .wrapper {
@@ -75,18 +76,22 @@ body {
    =================== */
 
 .header-container {
-    border-bottom: 20px solid #FFBF00;
+    border-bottom: 20px solid #ffbf00;
 }
 
 .footer-container,
 .main aside {
-    border-top: 20px solid #FFBF00;
+    border-top: 20px solid #ffbf00;
 }
 
 .header-container,
 .footer-container,
 .main aside {
-    background: #1B1BB3;
+    background: #1b1bbe;
+}
+
+.main-container {
+    /*border-left: 10px solid #1b1bbe;*/
 }
 
 .title {
@@ -162,18 +167,36 @@ nav a:hover {
    Author's custom styles
    ========================================================================== */
 
+.tumblr_posts {  
+    list-style-type: none;
+    width: 60%;
+}
+.tumblr_post {      
+    margin-bottom: 50px;
+    padding-left: 20px;
+    border-left: 3px solid #ffbf00;
+}
+.tumblr_title { 
+    font-size: 2em;
+    color: black;
+    margin-bottom: 10px;
+}
 
+/* code block */
+pre,code {
+    background-color: #ababab;
+}
 
+.tumblr_body img {  
+    /*width: 30%;*/
 
-
-
-
-
-
-
-
-
-
+}
+.read_more_container {
+    
+}
+.read_more_container a {
+    
+}
 
 
 /* ==========================================================================
@@ -216,17 +239,6 @@ nav a:hover {
 }
 
 @media only screen and (min-width: 768px) {
-
-/* ====================
-    WIDE: CSS3 Effects
-   ==================== */
-
-    .header-container,
-    .main aside {
-        -webkit-box-shadow: 0 5px 10px #aaa;
-           -moz-box-shadow: 0 5px 10px #aaa;
-                box-shadow: 0 5px 10px #aaa;
-    }
 
 /* ============
     WIDE: Menu
@@ -338,9 +350,9 @@ nav a:hover {
     * {
         background: transparent !important;
         color: #000 !important; /* Black prints faster: h5bp.com/s */
-        box-shadow: none !important;
+        /*box-shadow: none !important;
         text-shadow: none !important;
-    }
+*/    }
 
     a,
     a:visited {
