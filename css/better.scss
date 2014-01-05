@@ -1,0 +1,121 @@
+$blue: #1b1bbe;
+$maize: #ffbf00;
+$orange: #ff9400;
+
+html {
+    height: 100%;
+    border-left: 10px solid $blue;
+}
+
+body {
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+i:hover {
+  color: green;
+}
+
+@font-face {
+  font-family: LiberationSans;
+  src: url(fonts/liberationSans-regular.ttf);
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 5%;
+}
+
+.title {
+  float: left;
+  color: #fff;
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+nav {
+  float: right;
+  width: 38%;
+  height: 100%;
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    float: left;
+    width: 27%;
+    margin: 0 1.7%;
+    padding: 25px 2%;
+    // margin-bottom: 0;
+
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: $blue;
+    background: $maize;
+
+    &:hover {
+      // color: #fff;
+      text-decoration: underline;
+    }
+  }
+
+  li {
+    &:first-child a {
+      margin-left: 0;
+    }
+    &:last-child a {
+      margin-right: 0;
+    }
+  }
+  ul li {
+    display: inline;
+  }
+}
+
+.main {
+
+  padding: 30px 0;
+  article { 
+    float: left;
+    width: 57%;
+
+    h1 {
+      font-size: 2em;
+    }
+  }
+
+  aside {
+    float: right;
+    width: 28%;
+    color: #fff;
+    padding: 0px 5% 10px;
+  }
+}
+
+.header-container {
+  border-bottom: 20px solid $maize;
+}
+
+.footer-container, .main aside {
+  border-top: 20px solid $maize;
+}
+
+.header-container, .footer-container, .main aside {
+  background: $blue;
+}
+
+.clearfix {
+  &:before {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+  zoom: 1;
+}

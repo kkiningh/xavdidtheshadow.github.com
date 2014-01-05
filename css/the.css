@@ -6,7 +6,8 @@ html, button, input, select, textarea {
 
 body {
   font-size: 1em;
-  line-height: 1.4; }
+  line-height: 1.4;
+  border-left: 10px solid #1b1bbe; }
 
 ::-moz-selection, ::selection {
   background: #b3d4fc;
@@ -56,9 +57,7 @@ i:hover {
     ALL: Blue Theme
    =================== */
 body {
-  font: 16px / 26px LiberationSans, Helvetica, Helvetica Neue, Arial;
-  height: 100%;
-  border-left: 10px solid #1b1bbe; }
+  font: 16px / 26px LiberationSans, Helvetica, Helvetica Neue, Arial; }
 
 .header-container {
   border-bottom: 20px solid #ffbf00; }
@@ -70,7 +69,13 @@ body {
   background: #1b1bbe; }
 
 .main-container {
-  height: 100%; }
+  padding-bottom: 50px; }
+
+.footer-container {
+  height: 50px;
+  position: absolute;
+  width: 100%;
+  bottom: 0; }
 
 .title {
   color: #fff; }
