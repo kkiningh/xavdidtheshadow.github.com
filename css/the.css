@@ -7,7 +7,10 @@ html, button, input, select, textarea {
 body {
   font-size: 1em;
   line-height: 1.4;
-  border-left: 10px solid #1b1bbe; }
+  font: 16px / 26px LiberationSans, Helvetica, Helvetica Neue, Arial; }
+
+html, body {
+  height: 100%; }
 
 ::-moz-selection, ::selection {
   background: #b3d4fc;
@@ -56,8 +59,9 @@ i:hover {
 /* ===================
     ALL: Blue Theme
    =================== */
-body {
-  font: 16px / 26px LiberationSans, Helvetica, Helvetica Neue, Arial; }
+.page {
+  min-height: 100%;
+  position: relative; }
 
 .header-container {
   border-bottom: 20px solid #ffbf00; }
@@ -69,10 +73,11 @@ body {
   background: #1b1bbe; }
 
 .main-container {
-  padding-bottom: 50px; }
+  padding-bottom: 40px;
+  border-left: 10px solid #1b1bbe; }
 
 .footer-container {
-  height: 50px;
+  height: 40px;
   position: absolute;
   width: 100%;
   bottom: 0; }
@@ -114,8 +119,7 @@ nav a {
     padding: 0px 5% 10px; }
 
 .footer-container footer {
-  color: #fff;
-  padding: 10px 0; }
+  color: #fff; }
 
 /* ===============
     ALL: IE Fixes

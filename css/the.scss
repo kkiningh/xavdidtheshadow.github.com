@@ -14,7 +14,13 @@ html, button, input, select, textarea {
 body {
   font-size: 1em;
   line-height: 1.4;
-  border-left: 10px solid $blue;
+  font: 16px / 26px LiberationSans, Helvetica, Helvetica Neue, Arial;
+  // border here means blue line is on top
+  // border-left: 10px solid $blue;
+}
+
+html, body {
+  height: 100%;
 }
 
 ::-moz-selection, ::selection {
@@ -75,12 +81,9 @@ i:hover {
     ALL: Blue Theme
    =================== */
 
-
-
-body {
-  font: 16px / 26px LiberationSans, Helvetica, Helvetica Neue, Arial;
-  // font-weight: 200;
-  // height: 100%;
+.page {
+  min-height: 100%;
+  position: relative;
 }
 
 .header-container {
@@ -95,12 +98,16 @@ body {
   background: $blue;
 }
 
+$footer-size: 40px;
+
 .main-container {
-  padding-bottom: 50px;
+  padding-bottom: $footer-size;
+  // border here means yellow line interrupted
+  border-left: 10px solid $blue;
 }
 
 .footer-container {
-  height: 50px;
+  height: $footer-size;
   position: absolute;
   width: 100%;
   bottom: 0;
@@ -156,7 +163,7 @@ nav {
 
 .footer-container footer {
   color: #fff;
-  padding: 10px 0;
+  // padding: 10px 0;
 }
 
 /* ===============
