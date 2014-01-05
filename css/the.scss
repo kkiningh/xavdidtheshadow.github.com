@@ -84,6 +84,8 @@ i:hover {
 .page {
   min-height: 100%;
   position: relative;
+  // border here means yellow line interrupted
+  border-left: 10px solid $blue;
 }
 
 .header-container {
@@ -101,9 +103,7 @@ i:hover {
 $footer-size: 30px;
 
 .main-container {
-  padding-bottom: $footer-size;
-  // border here means yellow line interrupted
-  border-left: 10px solid $blue;
+  padding-bottom: $footer-size;  
 }
 
 .footer-container {
@@ -111,6 +111,14 @@ $footer-size: 30px;
   position: absolute;
   width: 100%;
   bottom: 0;
+
+  .feet {
+    position: absolute;
+    left: 0;
+    // margin-left: -50px;
+    // overflow: hidden;
+    color: green;
+  }
 }
 
 .title {

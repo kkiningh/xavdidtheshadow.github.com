@@ -61,7 +61,8 @@ i:hover {
    =================== */
 .page {
   min-height: 100%;
-  position: relative; }
+  position: relative;
+  border-left: 10px solid #1b1bbe; }
 
 .header-container {
   border-bottom: 20px solid #ffbf00; }
@@ -73,14 +74,17 @@ i:hover {
   background: #1b1bbe; }
 
 .main-container {
-  padding-bottom: 30px;
-  border-left: 10px solid #1b1bbe; }
+  padding-bottom: 30px; }
 
 .footer-container {
   height: 30px;
   position: absolute;
   width: 100%;
   bottom: 0; }
+  .footer-container .feet {
+    position: absolute;
+    left: 0;
+    color: green; }
 
 .title {
   color: #fff; }
